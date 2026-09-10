@@ -1,0 +1,102 @@
+PS D:\exp5> & C:\Users\Harsh\AppData\Local\Programs\Python\Python314\python.exe d:/exp5/test/test_calc.py
+Traceback (most recent call last):
+  File "d:\exp5\test\test_calc.py", line 1, in <module>
+    from src.calc import add
+ModuleNotFoundError: No module named 'src'
+PS D:\exp5> pytest 
+======================================= test session starts ========================================
+platform win32 -- Python 3.14.5, pytest-9.1.1, pluggy-1.6.0
+rootdir: D:\exp5
+plugins: anyio-4.14.2
+collected 0 items / 1 error                                                                         
+
+============================================== ERRORS ==============================================
+________________________________ ERROR collecting test/test_calc.py ________________________________
+ImportError while importing test module 'D:\exp5\test\test_calc.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Users\Harsh\AppData\Local\Programs\Python\Python314\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+test\test_calc.py:1: in <module>
+    from src.calc import add
+E   ModuleNotFoundError: No module named 'src'
+===================================== short test summary info ======================================
+ERROR test/test_calc.py
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+========================================= 1 error in 0.16s =========================================
+PS D:\exp5> & C:\Users\Harsh\AppData\Local\Programs\Python\Python314\python.exe d:/exp5/test/test_calc.py
+Traceback (most recent call last):
+  File "d:\exp5\test\test_calc.py", line 1, in <module>
+    from src.calc import add
+ModuleNotFoundError: No module named 'src'
+PS D:\exp5> git init
+Initialized git remote add origin https://github.com/aryanchavan24/5.git
+PS D:\exp5> git branch -M main
+PS D:\exp5> git add readme.md
+PS D:\exp5> git commit -m "readme"
+[main (root-commit) c0e4a1c] readme
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.md
+PS D:\exp5> git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 207 bytes | 207.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/aryanchavan24/5.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS D:\exp5> git branch -M f/c      
+PS D:\exp5> git add .
+PS D:\exp5> git commit -m "M"
+[f/c 5f15cce] M
+ 4 files changed, 19 insertions(+)
+ create mode 100644 .github/workflows/ci.yml
+ create mode 100644 src/calc.py
+ create mode 100644 test/__pycache__/test_calc.cpython-314-pytest-9.1.1.pyc
+ create mode 100644 test/test_calc.py
+PS D:\exp5> git push -u origin f/c
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (11/11), 1.56 KiB | 798.00 KiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'f/c' on GitHub by visiting:
+remote:      https://github.com/aryanchavan24/5/pull/new/f/c
+remote: 
+To https://github.com/aryanchavan24/5.git
+ * [new branch]      f/c -> f/c
+branch 'f/c' set up to track 'origin/f/c'.
+PS D:\exp5> git add .             
+PS D:\exp5> git commit -m "Ml"    
+[f/c d7c0bc0] Ml
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 src/__init__.py
+ create mode 100644 test/__init__.py
+PS D:\exp5> git push -u origin f/c
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 520 bytes | 520.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/aryanchavan24/5.git
+   5f15cce..d7c0bc0  f/c -> f/c
+branch 'f/c' set up to track 'origin/f/c'.
+PS D:\exp5> git add .             
+PS D:\exp5> git commit -m "M2"    
+[f/c 44ecc6e] M2
+ 1 file changed, 17 insertions(+), 12 deletions(-)
+PS D:\exp5> git push -u origin f/c
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 575 bytes | 575.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/aryanchavan24/5.git
+   d7c0bc0..44ecc6e  f/c -> f/c
+branch 'f/c' set up to track 'origin/f/c'.
+PS D:\exp5> 
